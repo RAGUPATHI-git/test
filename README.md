@@ -51,3 +51,6 @@ Right now, the app is using dummy data. Later, we can replace it with an API wit
 
 
 ![alt text](image.png)
+
+
+![alt text](image-1.png)
