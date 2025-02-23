@@ -9,7 +9,7 @@ class NameRepositoryImpl implements NameRepository {
 
   @override
   Future<List<NameEntity>> getName() async {
-    final names = await dataSource.getNames();
+    final names = await dataSource.getApiNames();
     return names.map((names) => NameEntity(name: names.name)).toList();
   }
 }
