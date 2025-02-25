@@ -6,7 +6,13 @@ class NamesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Names List")),
+      appBar: AppBar(title: Text("Names List"),
+      actions: [
+        ElevatedButton(onPressed:(){
+          Navigator.of(context).pushNamed('/numbers_page');
+        }, 
+        child: Text(" Go to madhu's page"))
+      ],),
       body: BlocBuilder<NamesBloc, NamesState>(
         builder: (context, state) {
           if (state is NamesLoading) {

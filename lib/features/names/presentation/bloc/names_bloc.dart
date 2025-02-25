@@ -16,3 +16,16 @@ class NamesBloc extends Bloc<NamesEvent, NamesState> {
     });
   }
 }
+
+class NumbersBloc extends Bloc<NumbersEvent,NumberState>{
+
+  final GetIntUsecase getIntUsecase;
+
+  NumbersBloc(this.getIntUsecase): super(Numberss()){
+    on<NumbersEvent>((event,emit) async {
+
+      final numbers= await GetIntUsecase().call();
+      emit(NumbersLoaded(numbers: numbers));
+    });
+  }
+}

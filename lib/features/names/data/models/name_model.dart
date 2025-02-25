@@ -16,7 +16,7 @@ class NumberModel extends NumberEntitiy{
    NumberModel({required this.numbers}) : super(number:numbers);
 
    factory NumberModel.fromJson(Map<String,dynamic>json){
-    return NumberModel(numbers: json['number']);
+    return NumberModel(numbers: json['numbers']);
    }
 
   

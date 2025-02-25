@@ -13,3 +13,14 @@ final class NamesLoaded extends NamesState {
   NamesLoaded({required this.names});
   
 }
+
+final class NumberState{}
+
+final class Numberss extends NumberState{}
+
+final class NumbersLoaded extends NumberState{
+
+  final List<NumberEntitiy> numbers;
+
+  NumbersLoaded({required this.numbers});
+}
