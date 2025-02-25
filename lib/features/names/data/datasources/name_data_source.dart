@@ -32,4 +32,20 @@ class NameDataSource {
     await Future.delayed(Duration(seconds: 1));
     return _dummynames;
   }
+
+}
+
+class NumberDataSource{
+
+  final List<NumberModel> _dummynumbers=[
+    NumberModel(numbers: 00),
+    NumberModel(numbers: 000),
+    NumberModel(numbers: 0000),
+  ];
+
+  Future<List<NumberModel>> getInts()async {
+    await Future.delayed(Duration(seconds: 2));
+    return _dummynumbers;
+  }
+  
 }

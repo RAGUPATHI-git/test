@@ -9,3 +9,15 @@ class NameModel extends NameEntity {
     return NameModel(names: json['name']);
   }
 }
+
+
+class NumberModel extends NumberEntitiy{
+   final int numbers;
+   NumberModel({required this.numbers}) : super(number:numbers);
+
+   factory NumberModel.fromJson(Map<String,dynamic>json){
+    return NumberModel(numbers: json['number']);
+   }
+
+  
+}

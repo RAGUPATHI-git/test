@@ -13,3 +13,16 @@ class NameRepositoryImpl implements NameRepository {
     return names.map((names) => NameEntity(name: names.name)).toList();
   }
 }
+
+
+class NumberRepositoryImpl implements NumberRepository{
+final NumberDataSource dataSourcee;
+
+ NumberRepositoryImpl({required this.dataSourcee});
+
+ @override
+ Future<List<NumberEntitiy>> getInt() async {
+  final numbers = await dataSourcee.getInts();
+  return numbers.map((numbers) => NumberEntitiy(number: numbers.number)).toList();
+ }
+}

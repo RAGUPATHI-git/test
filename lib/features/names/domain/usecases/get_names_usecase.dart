@@ -13,3 +13,17 @@ class GetNamesUsecase {
     return  namesRepository.getName();
   }
 }
+
+class GetIntUsecase{
+  NumberRepository? repo;
+  final numberRepositary = NumberRepositoryImpl(dataSourcee :NumberDataSource());
+
+  GetIntUsecase({this.repo});
+
+  Future<List<NumberEntitiy>> call(){
+    return numberRepositary.getInt();
+  }
+  
+  
+  
+  }
