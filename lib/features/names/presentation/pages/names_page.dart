@@ -36,3 +36,14 @@ class NamesPage extends StatelessWidget {
 }
 
 
+
+
+
+//1. entity
+// 2.model 
+// 3.data_source
+// 4. abstract Repository
+// 4. data repository
+// 5.usecase -> Callback
+// 6.bloc
+// 7.update the bloc

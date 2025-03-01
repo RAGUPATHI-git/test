@@ -11,7 +11,7 @@ class NamesBloc extends Bloc<NamesEvent, NamesState> {
   NamesBloc(this.getNamesUsecase) : super(NamesInitial()) {
     on<NamesEvent>((event, emit) async {
       await (NamesLoading());
-      final names = await GetNamesUsecase().call();
+      final names = await GetNamesUsecase().call() ?? [];
       emit(NamesLoaded(names: names));
     });
   }

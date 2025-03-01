@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:demo3/features/names/data/models/name_model.dart';
 import 'package:http/http.dart' as http;
 
@@ -20,6 +19,8 @@ class NameDataSource {
     }
   }
 
+
+
   final List<NameModel> _dummynames = [
     NameModel(names: "Tony Stark"),
     NameModel(names: "Mark"),
@@ -32,4 +33,7 @@ class NameDataSource {
     await Future.delayed(Duration(seconds: 1));
     return _dummynames;
   }
+  
 }
+
+
